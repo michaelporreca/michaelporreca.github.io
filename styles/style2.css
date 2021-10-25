@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Cutive+Mono&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Cutive Mono", serif;
+}
+
+/* Container */
+.container {
+    margin: 0px auto;
+    max-width: 1200px;
+}
+
+/* Header */
+header {
+    background-color: #000;
+    padding: 100px;
+    color: #fff;
+}
+
+.logo-and-links {
+    text-align: center;
+}
+
+.logo-and-links a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Cutive Mono", serif;
+    text-transform: uppercase;
+}
+
+.logo-and-links a:hover {
+    font-weight: bold;
+}
+
+h1 {
+    font-family: "Almendra", serif;
+    color: #000;
+    font-size: 6vw;
+    font-weight: 700;
+    -webkit-text-stroke: 1px #fff;
+}
+
+.tagline {
+    margin: 0px auto;
+    padding-top: 50px;
+    max-width: 850px;
+    text-align: center;
+    font-size: 1.5vw;
+    line-height: 5vh;
+}
+
+.tagline u {
+    border-bottom: 2px solid  #FFC4BC;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    header {
+        padding: 50px;
+    }
+
+    h1 {
+        font-size: 8vw;
+    }
+
+    .tagline {
+        font-size: 3vw;
+    }
+}
