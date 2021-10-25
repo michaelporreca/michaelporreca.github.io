@@ -31,6 +31,7 @@ header {
 
 .logo-and-links a:hover {
     font-weight: bold;
+    color: #FFC4BC;
 }
 
 h1 {
@@ -53,6 +54,18 @@ h1 {
 .tagline u {
     border-bottom: 2px solid  #FFC4BC;
     text-decoration: none;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+
+    h1 {
+        font-size: 8vw;
+    }
+
+    .tagline {
+        font-size: 2vw;
+    }
 }
 
 @media only screen and (max-width: 600px) {
