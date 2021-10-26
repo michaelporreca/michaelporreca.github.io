@@ -66,6 +66,7 @@ h1 {
     border-bottom: 2px solid  #FFC4BC;
     text-decoration: none;
     padding: 5px;
+    font-weight: bold;
 }
 
 /* Info */
@@ -91,6 +92,7 @@ h1 {
 .info-left {
     padding-right: 100px;
     text-align: center;
+    line-height: 3vh;
 }
 
 .info-right {
@@ -104,6 +106,59 @@ h1 {
     border-radius: 100px;
 }
 
+/* Projects */
+
+.projects {
+    background-color: #fff;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+}
+
+.projects h1 {
+    font-family: "Almendra", serif;
+    color: #fff;
+    font-size: 6vw;
+    font-weight: 700;
+    -webkit-text-stroke: 2px #000;
+}
+
+.projects-info {
+    margin: 0px auto;
+    padding-top: 50px;
+    max-width: 850px;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 5vh;
+}
+
+.projects-image {
+    width: 100%;
+    max-width: 800px;
+    border: 3px solid #000;
+}
+
+.projects h2 {
+    color: #000;
+    font-family: "Cutive Mono", serif;
+    text-transform: uppercase;
+}
+
+.projects-link {
+    background-color: #FFC4BC;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 25px;
+    border: 1px solid #000;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 18px;
+}
+
+.projects-link:hover {
+    border: 3px solid #000;
+}
+
 /* Portfolio Link */
 
 .portfolio {
@@ -115,6 +170,20 @@ h1 {
     text-transform: uppercase;
     color: #000;
     font-size: 1em;
+}
+
+.portfolio:hover {
+    border: 3px solid #000;
+}
+
+hr {
+    border: 2px solid #000;
+}
+
+footer {
+    text-align: center;
+    padding: 100px;
+    background-color: #E5E5E5;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -138,6 +207,21 @@ h1 {
         font-size: 8vw;
     }
 
+    .projects h1 {
+        font-size: 8vw;
+    }
+
+    .projects {
+        background-color: #fff;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+    }
+
+    .projects-link {
+        font-size: 18px;
+    }
+
     .info-container {
         display:inline;
     }
@@ -151,6 +235,10 @@ h1 {
     .info-right {
         font-size: 2vw;
         line-height: 5vh;
+    }
+
+    footer {
+        padding: 50px;
     }
 }
 
@@ -179,6 +267,21 @@ h1 {
         font-size: 8vw;
     }
 
+    .projects h1 {
+        font-size: 8vw;
+    }
+
+    .projects {
+        background-color: #fff;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+    }
+
+    .projects-link {
+        font-size: 18px;
+    }
+
     .info-container {
         display:inline;
     }
@@ -192,5 +295,9 @@ h1 {
     .info-right {
         font-size: 4vw;
         line-height: 5vh;
+    }
+    
+    footer {
+        padding: 50px;
     }
 }

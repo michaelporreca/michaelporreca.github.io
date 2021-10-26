@@ -1,55 +1,303 @@
 @import url("https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Cutive+Mono&display=swap");
 
-html,
 body {
-  height: 100%;
-}
-
-body {
-  background-color: black;
   margin: 0;
+  font-family: "Cutive Mono", serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    font-family: "Cutive Mono", serif;
+    text-transform: uppercase;
+}
+
+/* Container */
 .container {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+    margin: 0px auto;
+    max-width: 1200px;
+}
+
+/* Header */
+header {
+    background-color: #000;
+    padding: 100px;
+    color: #fff;
+}
+
+.logo-and-links {
+    text-align: center;
+}
+
+.logo-and-links a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Cutive Mono", serif;
+    text-transform: uppercase;
+}
+
+.logo-and-links a:hover {
+    font-weight: bold;
+    color: #FFC4BC;
 }
 
 h1 {
-  font-family: "Almendra", serif;
-  color: #000;
-  font-size: 6vw;
-  font-weight: 700;
-  -webkit-text-stroke: 2px #fff;
+    font-family: "Almendra", serif;
+    color: #000;
+    font-size: 6vw;
+    font-weight: 700;
+    -webkit-text-stroke: 1px #fff;
 }
 
-h3 {
-  font-family: "Cutive Mono", monospace;
-  color: white;
-  text-transform: uppercase;
-  font-size: 2vw;
-  letter-spacing: 1vw;
+.tagline {
+    margin: 0px auto;
+    padding-top: 50px;
+    max-width: 850px;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 5vh;
+}
+
+.tagline u {
+    border-bottom: 2px solid  #FFC4BC;
+    text-decoration: none;
+    padding: 5px;
+    font-weight: bold;
+}
+
+/* Info */
+.info {
+    background-color: #FFC4BC;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+}
+
+.info h1 {
+    font-family: "Almendra", serif;
+    color: #FFC4BC;
+    font-size: 6vw;
+    font-weight: 700;
+    -webkit-text-stroke: 2px #000;
+}
+
+.info-container {
+    display: flex;
+}
+
+.info-left {
+    padding-right: 100px;
+    text-align: center;
+    line-height: 3vh;
+}
+
+.info-right {
+    font-size: 1.5em;
+    line-height: 5vh;
+    text-align: center;
+}
+
+.info-pic {
+    width: 200px;
+    border-radius: 100px;
+}
+
+/* Projects */
+
+.projects {
+    background-color: #fff;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+}
+
+.projects h1 {
+    font-family: "Almendra", serif;
+    color: #fff;
+    font-size: 6vw;
+    font-weight: 700;
+    -webkit-text-stroke: 2px #000;
+}
+
+.projects-info {
+    margin: 0px auto;
+    padding-top: 50px;
+    max-width: 850px;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 5vh;
+}
+
+.projects-image {
+    width: 100%;
+    max-width: 800px;
+    border: 3px solid #000;
+}
+
+.projects h2 {
+    color: #000;
+    font-family: "Cutive Mono", serif;
+    text-transform: uppercase;
+}
+
+.projects-link {
+    background-color: #FFC4BC;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 25px;
+    border: 1px solid #000;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 18px;
+}
+
+.projects-link:hover {
+    border: 3px solid #000;
+}
+
+/* Portfolio Link */
+
+.portfolio {
+    background-color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 25px;
+    border: 1px solid #000;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 1em;
+}
+
+.portfolio:hover {
+    border: 3px solid #000;
+}
+
+hr {
+    border: 2px solid #000;
+}
+
+footer {
+    text-align: center;
+    padding: 100px;
+    background-color: #E5E5E5;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    h1 {
+        font-size: 8vw;
+    }
+
+    .tagline {
+        font-size: 2vw;
+    }
+
+    .info {
+        background-color: #FFC4BC;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+    }
+
+    .info h1 {
+        font-size: 8vw;
+    }
+
+    .projects h1 {
+        font-size: 8vw;
+    }
+
+    .projects {
+        background-color: #fff;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+    }
+
+    .projects-link {
+        font-size: 18px;
+    }
+
+    .info-container {
+        display:inline;
+    }
+
+    .info-left {
+        padding-right: 0px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    
+    .info-right {
+        font-size: 2vw;
+        line-height: 5vh;
+    }
+
+    footer {
+        padding: 50px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
-  h1 {
-    font-family: "Almendra", serif;
-    color: #000;
-    font-size: 9vw;
-    font-weight: 700;
-    -webkit-text-stroke: 1px #fff;
-  }
 
-  h3 {
-    font-family: "Cutive Mono", monospace;
-    color: white;
-    text-transform: uppercase;
-    font-size: 4vw;
-    letter-spacing: 1vw;
-  }
+    header {
+        padding: 50px;
+    }
+
+    h1 {
+        font-size: 8vw;
+    }
+
+    .tagline {
+        font-size: 4vw;
+    }
+
+    .info {
+        background-color: #FFC4BC;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+    }
+
+    .info h1 {
+        font-size: 8vw;
+    }
+
+    .projects h1 {
+        font-size: 8vw;
+    }
+
+    .projects {
+        background-color: #fff;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+    }
+
+    .projects-link {
+        font-size: 18px;
+    }
+
+    .info-container {
+        display:inline;
+    }
+
+    .info-left {
+        padding-right: 0px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    
+    .info-right {
+        font-size: 4vw;
+        line-height: 5vh;
+    }
+    
+    footer {
+        padding: 50px;
+    }
 }
