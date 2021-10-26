@@ -5,6 +5,17 @@ body {
   font-family: "Cutive Mono", serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    font-family: "Cutive Mono", serif;
+    text-transform: uppercase;
+}
+
 /* Container */
 .container {
     margin: 0px auto;
@@ -47,7 +58,7 @@ h1 {
     padding-top: 50px;
     max-width: 850px;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 1.5em;
     line-height: 5vh;
 }
 
@@ -57,7 +68,56 @@ h1 {
     padding: 5px;
 }
 
-@media only screen and (max-width: 800px) {
+/* Info */
+.info {
+    background-color: #FFC4BC;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+}
+
+.info h1 {
+    font-family: "Almendra", serif;
+    color: #FFC4BC;
+    font-size: 6vw;
+    font-weight: 700;
+    -webkit-text-stroke: 2px #000;
+}
+
+.info-container {
+    display: flex;
+}
+
+.info-left {
+    padding-right: 100px;
+    text-align: center;
+}
+
+.info-right {
+    font-size: 1.5em;
+    line-height: 5vh;
+    text-align: center;
+}
+
+.info-pic {
+    width: 200px;
+    border-radius: 100px;
+}
+
+/* Portfolio Link */
+
+.portfolio {
+    background-color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 25px;
+    border: 1px solid #000;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 1em;
+}
+
+@media only screen and (max-width: 1200px) {
 
     h1 {
         font-size: 8vw;
@@ -65,6 +125,32 @@ h1 {
 
     .tagline {
         font-size: 2vw;
+    }
+
+    .info {
+        background-color: #FFC4BC;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+    }
+
+    .info h1 {
+        font-size: 8vw;
+    }
+
+    .info-container {
+        display:inline;
+    }
+
+    .info-left {
+        padding-right: 0px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    
+    .info-right {
+        font-size: 2vw;
+        line-height: 5vh;
     }
 }
 
@@ -79,6 +165,32 @@ h1 {
     }
 
     .tagline {
-        font-size: 3vw;
+        font-size: 4vw;
+    }
+
+    .info {
+        background-color: #FFC4BC;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+    }
+
+    .info h1 {
+        font-size: 8vw;
+    }
+
+    .info-container {
+        display:inline;
+    }
+
+    .info-left {
+        padding-right: 0px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    
+    .info-right {
+        font-size: 4vw;
+        line-height: 5vh;
     }
 }
